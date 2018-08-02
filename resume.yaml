@@ -1,0 +1,74 @@
+title: Daniel Hartman – Resume
+
+name: Daniel Hartman
+
+jobtitle: Software Engineer
+
+education:
+  date: May 2015
+  university: Northeastern University
+  college: CCIS
+  degree: B.Sc in Computer Science and Interactive Media
+
+email: djhrtmn@icloud.com
+
+website:
+  a: djhartman.com
+  href: https://www.djhartman.com/
+
+github:
+  a: github.com/dj
+  href: https://www.github.com/dj
+
+jobs:
+  - company: TandemSeven
+    title: Senior Front End Engineer
+    date: January 2017 - present
+    description:
+      - Working on a distributed team building a SPA for a national brand with ecommerce functionality and video streaming capabilities
+      - Built a reusable component library documented with React Styleguidist
+      - Mentoring junior developers in web development
+  - company: MIT Technology Review
+    title: Software Engineer
+    date: June 2015 — Sept 2017
+    description:
+      - Shipped a redesigned <a href="https://www.technologyreview.com">MIT Technology Review’s website</a>, migrating from a legacy drupal site to a headless CMS with node.js ”front end.”
+      - Wrote cross-browser integration tests running by Browserstack with Sellenium.
+      - Sped up page loads, improved ad unit performance with lazy-loading ad units.
+  - company: EverTrue
+    title: Software Engineer Co-op
+    date: January 2014 – July 2014
+    description:
+      - Developed Ruby on Rails app to serve white-labeled landing pages for EverTrue’s white-label mobile apps.
+      - Developed and maintained a Backbone.js and React SPA administrative portal for EverTrue mobile application.
+  - company: PayPal
+    title: Software
+    date: January 2013 – August 2013
+    description:
+      - Developed and maintained a Ruby on Rails app used to traffic millions of dollars in advertisments as part of a small scrum team.
+
+projects:
+  - title: Census Data Map
+    href: 'http://dj.github.io/boston/'
+    a: 'dj.github.io/boston/'
+    description: 'Census tract-level data visualization. Made with D3 and Leaflet.js'
+  - title: Point Poker
+    href: 'TODO'
+    a: 'pointpoker.com'
+    description: 'Online multiplayer scrum poker game. Node.js server with Firebase API and React.js client.'
+
+skills:
+  - JavaScript
+  - HTML & CSS
+  - Ruby
+  - Python
+  - Lua
+  - Java
+  - Go
+
+interests:
+  - Live music
+  - cycling
+  - podcasts
+  - cooking
+  - video games

@@ -1,0 +1,235 @@
+/* Reset */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,
+blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em,
+img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u,
+i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table,
+caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details,
+embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby,
+section, summary, time, mark, audio, video {
+  all: initial;
+  font-family: system-ui;
+  word-wrap: break-word;
+}
+
+/* Variables */
+:root {
+  --background: #eeeeee;
+  --resume-background: #f5f5f5;
+  --container-width: 800px;
+
+  --source-sans: system-ui;
+
+  /* Colors */
+  --blue: #2079c7;
+	--grey: #666;
+  --dark-grey: #222;
+
+  /* Type */
+  --page-title-font: 900 46px "Source Sans Pro", sans-serif;
+  --jobtitle-font: 1.25rem "Source Code Pro", monospace;
+  --section-heading-font: 600 0.857rem/1.5rem "Souce Sans Pro", sans-serif;
+  --p-font: 400 0.9rem/1.15rem "Source Sans Pro", sans-serif;
+
+  /* Experience Section */
+  --job-title-font: 600 1rem "Source Sans Pro", sans-serif;
+  --job-company-font: 300 1rem "Source Sans Pro", sans-serif;
+	--job-date-font: 600 0.8rem "Source Code Pro", monospace;
+	
+	/* Project Section */
+	--project-link-font: 300 0.7rem "Source Code Pro", sans-serif;
+}
+
+body {
+  font-size: 1rem;
+  background-color: var(--background);
+}
+
+h1, h2, h3, h4, h5, h6, ul, li, p {
+  display: block;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: var(--dark-grey);
+}
+
+a {
+  font: var(--p-font);
+  color: var(--blue);
+  text-decoration: underline;
+}
+
+p {
+  font: var(--p-font);
+  color: var(--grey);
+}
+
+.container {
+  background-color: #fff;
+  padding: 5rem 3rem;
+  font-family: system-ui;
+  background-color: var(--resume-background);
+  margin: 0;
+  max-width: var(--container-width);
+
+  /* grid */
+  display: grid;
+  gap: 0;
+  grid-template-areas: "header"
+                        "contact"
+                        "experience"
+                        "education"
+                        "sidebar";
+}
+
+@media only screen and (min-width: 550px) {
+  .container {
+    margin: 3rem auto 3rem;
+    grid-template-areas: 	"header header header contact"
+                          "experience experience experience sidebar"
+                          "education education education education"
+  }
+}
+
+/* Print */
+@media only print {
+	.container {
+		margin: 0;
+		padding: 0;
+		max-width: 100%;
+		box-shadow: none;
+	}
+}
+
+.container {
+  box-shadow: 2px 1px 1px rgba(0, 0, 0, 0.15);
+}
+
+/* Headings */
+section h1 {
+  text-transform: uppercase;
+  color: var(--blue);
+  font: var(--section-heading-font);
+  margin: 2rem 0 1.25rem;
+}
+
+/* Header Section */
+.header {
+    grid-area: header;
+}
+
+.header h1 {
+  display: block;
+  font: var(--page-title-font);
+}
+
+.header .jobtitle {
+  display: block;
+  color: var(--blue);
+  font: var(--jobtitle-font);
+  margin-bottom: 1rem;
+}
+
+/* Contact Section */
+.contact {
+	grid-area: contact;
+}
+
+.contact a {
+  line-height: 1.25rem;
+}
+
+/* Experience Section */
+.experience {
+ 	grid-area: experience;
+  padding-right: 1rem;
+}
+
+@media only screen and (min-width: 550px) {
+  .experience {
+    padding-right: 5rem;
+  }
+}
+
+.job-title-and-company {
+  margin: 0.75rem 0 0.25rem;
+}
+
+.job-title {
+  font: var(--job-title-font);
+}
+
+.job-company {
+  font: var(--job-company-font);
+  font-style: italic;
+}
+
+.job-date {
+  text-transform: uppercase;
+  font: var(--job-date-font);
+  color: var(--grey);
+}
+
+.job-description {
+  margin: 0.75rem 0 2rem;
+  color: var(--grey);
+  font: var(--p-font);
+}
+
+.job-description li {
+  margin: 0.5rem 0 0.3rem;
+}
+
+.job:last-of-type .job-description {
+  margin-bottom: 0;
+}
+
+.sidebar {
+	grid-area: sidebar;
+}
+
+/* Projects Section */
+.projects {
+}
+
+.project-title {
+	margin: 0.75rem 0 0.25rem;
+	font: var(--job-title-font);
+	color: var(--dark-grey);
+}
+
+.project-link {
+	display: block;
+	font: var(--project-link-font);
+	margin: 0.25rem 0 0.75rem;
+}
+
+/* Education Section */
+.education {
+	grid-area: education;
+}
+
+.education-date {
+	font: var(--job-date-font);
+	text-transform: uppercase;
+}
+
+.education-university {
+	font: var(--job-title-font);
+}
+
+.education-college {
+	font: var(--job-company-font);
+	font-style: italic;
+}
+
+.education-degree {
+  margin: 0.5rem 0 0.3rem;
+}
+
+/* Skills Section */
+.skills {
+}
+
+/* Interests Section */
+.interests {
+}

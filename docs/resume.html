@@ -1,0 +1,364 @@
+<html lang="en"><head><meta http-equiv="X-UA-Compatible" content="ie=edge"/><meta charSet="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,600|Source+Sans+Pro:300,400,400i,700,900" rel="stylesheet"/><title>Daniel Hartman – Resume</title><style>/* Reset */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,
+blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em,
+img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u,
+i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table,
+caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details,
+embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby,
+section, summary, time, mark, audio, video {
+  -webkit-animation: none 0s ease 0s 1 normal none running;
+          animation: none 0s ease 0s 1 normal none running;
+  -webkit-backface-visibility: visible;
+          backface-visibility: visible;
+  background: transparent none repeat 0 0 / auto auto padding-box border-box scroll;
+  border: medium none currentColor;
+  border-collapse: separate;
+  -o-border-image: none;
+     border-image: none;
+  border-radius: 0;
+  border-spacing: 0;
+  bottom: auto;
+  box-shadow: none;
+  box-sizing: content-box;
+  caption-side: top;
+  clear: none;
+  clip: auto;
+  color: #000;
+  -webkit-columns: auto;
+          columns: auto;
+  -webkit-column-count: auto;
+          column-count: auto;
+  -webkit-column-fill: balance;
+          column-fill: balance;
+  grid-column-gap: normal;
+  -webkit-column-gap: normal;
+          column-gap: normal;
+  -webkit-column-rule: medium none currentColor;
+          column-rule: medium none currentColor;
+  -webkit-column-span: 1;
+          column-span: 1;
+  -webkit-column-width: auto;
+          column-width: auto;
+  content: normal;
+  counter-increment: none;
+  counter-reset: none;
+  cursor: auto;
+  direction: ltr;
+  display: inline;
+  empty-cells: show;
+  float: none;
+  font-family: serif;
+  font-size: medium;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: normal;
+  height: auto;
+  -webkit-hyphens: none;
+      -ms-hyphens: none;
+          hyphens: none;
+  left: auto;
+  letter-spacing: normal;
+  list-style: disc outside none;
+  margin: 0;
+  max-height: none;
+  max-width: none;
+  min-height: 0;
+  min-width: 0;
+  opacity: 1;
+  orphans: 2;
+  outline: medium none invert;
+  overflow: visible;
+  overflow-x: visible;
+  overflow-y: visible;
+  padding: 0;
+  page-break-after: auto;
+  page-break-before: auto;
+  page-break-inside: auto;
+  -webkit-perspective: none;
+          perspective: none;
+  -webkit-perspective-origin: 50% 50%;
+          perspective-origin: 50% 50%;
+  position: static;
+  right: auto;
+  -moz-tab-size: 8;
+    -o-tab-size: 8;
+       tab-size: 8;
+  table-layout: auto;
+  text-align: left;
+  text-align-last: auto;
+  text-decoration: none;
+  text-indent: 0;
+  text-shadow: none;
+  text-transform: none;
+  top: auto;
+  -webkit-transform: none;
+          transform: none;
+  -webkit-transform-origin: 50% 50% 0;
+          transform-origin: 50% 50% 0;
+  -webkit-transform-style: flat;
+          transform-style: flat;
+  transition: none 0s ease 0s;
+  unicode-bidi: normal;
+  vertical-align: baseline;
+  visibility: visible;
+  white-space: normal;
+  widows: 2;
+  width: auto;
+  word-spacing: normal;
+  z-index: auto;
+  all: initial;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Droid Sans, Helvetica Neue;
+  word-wrap: break-word;
+}
+
+/* Variables */
+:root {
+  --background: #eeeeee;
+  --resume-background: #f5f5f5;
+  --container-width: 800px;
+
+  --source-sans: system-ui;
+
+  /* Colors */
+  --blue: #2079c7;
+	--grey: #666;
+  --dark-grey: #222;
+
+  /* Type */
+  --page-title-font: 900 46px "Source Sans Pro", sans-serif;
+  --jobtitle-font: 1.25rem "Source Code Pro", monospace;
+  --section-heading-font: 600 0.857rem/1.5rem "Souce Sans Pro", sans-serif;
+  --p-font: 400 0.9rem/1.15rem "Source Sans Pro", sans-serif;
+
+  /* Experience Section */
+  --job-title-font: 600 1rem "Source Sans Pro", sans-serif;
+  --job-company-font: 300 1rem "Source Sans Pro", sans-serif;
+	--job-date-font: 600 0.8rem "Source Code Pro", monospace;
+	
+	/* Project Section */
+	--project-link-font: 300 0.7rem "Source Code Pro", sans-serif;
+}
+
+body {
+  font-size: 1rem;
+  background-color: #eeeeee;
+  background-color: var(--background);
+}
+
+h1, h2, h3, h4, h5, h6, ul, li, p {
+  display: block;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: #222;
+	color: var(--dark-grey);
+}
+
+a {
+  font: 400 0.9rem/1.15rem "Source Sans Pro", sans-serif;
+  font: var(--p-font);
+  color: #2079c7;
+  color: var(--blue);
+  text-decoration: underline;
+}
+
+p {
+  font: 400 0.9rem/1.15rem "Source Sans Pro", sans-serif;
+  font: var(--p-font);
+  color: #666;
+  color: var(--grey);
+}
+
+.container {
+  background-color: #fff;
+  padding: 5rem 3rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Droid Sans, Helvetica Neue;
+  background-color: #f5f5f5;
+  background-color: var(--resume-background);
+  margin: 0;
+  max-width: 800px;
+  max-width: var(--container-width);
+
+  /* grid */
+  display: grid;
+  grid-gap: 0;
+  gap: 0;
+  grid-template-areas: "header"
+                        "contact"
+                        "experience"
+                        "education"
+                        "sidebar";
+}
+
+@media only screen and (min-width: 550px) {
+  .container {
+    margin: 3rem auto 3rem;
+    grid-template-areas: 	"header header header contact"
+                          "experience experience experience sidebar"
+                          "education education education education"
+  }
+}
+
+/* Print */
+@media only print {
+	.container {
+		margin: 0;
+		padding: 0;
+		max-width: 100%;
+		box-shadow: none;
+	}
+}
+
+.container {
+  box-shadow: 2px 1px 1px rgba(0, 0, 0, 0.15);
+}
+
+/* Headings */
+section h1 {
+  text-transform: uppercase;
+  color: #2079c7;
+  color: var(--blue);
+  font: 600 0.857rem/1.5rem "Souce Sans Pro", sans-serif;
+  font: var(--section-heading-font);
+  margin: 2rem 0 1.25rem;
+}
+
+/* Header Section */
+.header {
+    grid-area: header;
+}
+
+.header h1 {
+  display: block;
+  font: 900 46px "Source Sans Pro", sans-serif;
+  font: var(--page-title-font);
+}
+
+.header .jobtitle {
+  display: block;
+  color: #2079c7;
+  color: var(--blue);
+  font: 1.25rem "Source Code Pro", monospace;
+  font: var(--jobtitle-font);
+  margin-bottom: 1rem;
+}
+
+/* Contact Section */
+.contact {
+	grid-area: contact;
+}
+
+.contact a {
+  line-height: 1.25rem;
+}
+
+/* Experience Section */
+.experience {
+ 	grid-area: experience;
+  padding-right: 1rem;
+}
+
+@media only screen and (min-width: 550px) {
+  .experience {
+    padding-right: 5rem;
+  }
+}
+
+.job-title-and-company {
+  margin: 0.75rem 0 0.25rem;
+}
+
+.job-title {
+  font: 600 1rem "Source Sans Pro", sans-serif;
+  font: var(--job-title-font);
+}
+
+.job-company {
+  font: 300 1rem "Source Sans Pro", sans-serif;
+  font: var(--job-company-font);
+  font-style: italic;
+}
+
+.job-date {
+  text-transform: uppercase;
+  font: 600 0.8rem "Source Code Pro", monospace;
+  font: var(--job-date-font);
+  color: #666;
+  color: var(--grey);
+}
+
+.job-description {
+  margin: 0.75rem 0 2rem;
+  color: #666;
+  color: var(--grey);
+  font: 400 0.9rem/1.15rem "Source Sans Pro", sans-serif;
+  font: var(--p-font);
+}
+
+.job-description li {
+  margin: 0.5rem 0 0.3rem;
+}
+
+.job:last-of-type .job-description {
+  margin-bottom: 0;
+}
+
+.sidebar {
+	grid-area: sidebar;
+}
+
+/* Projects Section */
+.projects {
+}
+
+.project-title {
+	margin: 0.75rem 0 0.25rem;
+	font: 600 1rem "Source Sans Pro", sans-serif;
+	font: var(--job-title-font);
+	color: #222;
+	color: var(--dark-grey);
+}
+
+.project-link {
+	display: block;
+	font: 300 0.7rem "Source Code Pro", sans-serif;
+	font: var(--project-link-font);
+	margin: 0.25rem 0 0.75rem;
+}
+
+/* Education Section */
+.education {
+	grid-area: education;
+}
+
+.education-date {
+	font: 600 0.8rem "Source Code Pro", monospace;
+	font: var(--job-date-font);
+	text-transform: uppercase;
+}
+
+.education-university {
+	font: 600 1rem "Source Sans Pro", sans-serif;
+	font: var(--job-title-font);
+}
+
+.education-college {
+	font: 300 1rem "Source Sans Pro", sans-serif;
+	font: var(--job-company-font);
+	font-style: italic;
+}
+
+.education-degree {
+  margin: 0.5rem 0 0.3rem;
+}
+
+/* Skills Section */
+.skills {
+}
+
+/* Interests Section */
+.interests {
+}
+</style></head><body><div class="container"><header class="header"><h1>Daniel Hartman</h1><p class="jobtitle">Software Engineer</p></header><section class="contact"><ul><li><a href="mailto:djhrtmn@icloud.com">djhrtmn@icloud.com</a></li><li><a href="https://www.djhartman.com/">djhartman.com</a></li><li><a href="https://www.github.com/dj">github.com/dj</a></li></ul></section><section class="experience"><h1>Experience</h1><ul class="jobs"><li class="job"><p class="job-title-and-company"><span class="job-title">Senior Front End Engineer</span> — <span class="job-company">TandemSeven</span></p><p class="job-date">January 2017 - present</p><ul class="job-description"><li class="job-description-item"><p>Working on a distributed team building a SPA for a national brand with ecommerce functionality and video streaming capabilities</p></li><li class="job-description-item"><p>Built a reusable component library documented with React Styleguidist</p></li><li class="job-description-item"><p>Mentoring junior developers in web development</p></li></ul></li><li class="job"><p class="job-title-and-company"><span class="job-title">Software Engineer</span> — <span class="job-company">MIT Technology Review</span></p><p class="job-date">June 2015 — Sept 2017</p><ul class="job-description"><li class="job-description-item"><p>Shipped a redesigned <a href="https://www.technologyreview.com">MIT Technology Review’s website</a>, migrating from a legacy drupal site to a headless CMS with node.js ”front end.”</p></li><li class="job-description-item"><p>Wrote cross-browser integration tests running by Browserstack with Sellenium.</p></li><li class="job-description-item"><p>Sped up page loads, improved ad unit performance with lazy-loading ad units.</p></li></ul></li><li class="job"><p class="job-title-and-company"><span class="job-title">Software Engineer Co-op</span> — <span class="job-company">EverTrue</span></p><p class="job-date">January 2014 – July 2014</p><ul class="job-description"><li class="job-description-item"><p>Developed Ruby on Rails app to serve white-labeled landing pages for EverTrue’s white-label mobile apps.</p></li><li class="job-description-item"><p>Developed and maintained a Backbone.js and React SPA administrative portal for EverTrue mobile application.</p></li></ul></li><li class="job"><p class="job-title-and-company"><span class="job-title">Software</span> — <span class="job-company">PayPal</span></p><p class="job-date">January 2013 – August 2013</p><ul class="job-description"><li class="job-description-item"><p>Developed and maintained a Ruby on Rails app used to traffic millions of dollars in advertisments as part of a small scrum team.</p></li></ul></li></ul></section><section class="education"><h1>Education</h1><p class="job-title-and-description"><span class="education-university">Northeastern University</span> — <span class="education-college">CCIS</span></p><p class="education-date">May 2015</p><p class="education-degree">B.Sc in Computer Science and Interactive Media</p></section><div class="sidebar"><section class="projects"><h1>Projects</h1><ul class="projects"><li class="project"><p class="project-title">Census Data Map</p><a class="project-link" href="http://dj.github.io/boston/">dj.github.io/boston/</a><p class="project-description">Census tract-level data visualization. Made with D3 and Leaflet.js</p></li><li class="project"><p class="project-title">Point Poker</p><a class="project-link" href="TODO">pointpoker.com</a><p class="project-description">Online multiplayer scrum poker game. Node.js server with Firebase API and React.js client.</p></li></ul></section><section class="skills"><h1>Skills</h1><p>JavaScript, HTML &amp; CSS, Ruby, Python, Lua, Java, Go</p></section><section class="interests"><h1>Interests</h1><p>Live music, cycling, podcasts, cooking, video games</p></section></div></div></body></html>
