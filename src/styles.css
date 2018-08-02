@@ -72,8 +72,11 @@ p {
   max-width: var(--container-width);
 
   /* grid */
+  display: block;
   display: grid;
   gap: 0;
+  grid-template-rows: repeat(5, auto);
+  grid-template-columns: 1fr;
   grid-template-areas: "header"
                         "contact"
                         "experience"
@@ -84,6 +87,8 @@ p {
 @media only screen and (min-width: 550px) {
   .container {
     margin: 3rem auto 3rem;
+    grid-template-rows: repeat(3, auto);
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-areas: 	"header header header contact"
                           "experience experience experience sidebar"
                           "education education education education"

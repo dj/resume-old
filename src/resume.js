@@ -117,15 +117,6 @@ const resume = css => (
   </html>
 );
 
-// TODO: figure out how to get nesting rules to work?
-// postcssPresetEnv({
-//     from: undefined,
-//     stage: 2,
-//     features: {
-//         'nesting-rules': true
-//     }
-// })
-
 postcssPresetEnv.process(cssFileContents).then(({ css }) => {
   const markup = resume(css);
   console.log(renderToStaticMarkup(markup));
