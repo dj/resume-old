@@ -27,16 +27,16 @@ section, summary, time, mark, audio, video {
   /* Type */
   --page-title-font: 900 46px "Source Sans Pro", sans-serif;
   --jobtitle-font: 1.25rem "Source Code Pro", monospace;
-  --section-heading-font: 600 0.857rem/1.5rem "Souce Sans Pro", sans-serif;
+  --section-heading-font: 600 1.2rem/1.5 "Souce Sans Pro", sans-serif;
   --p-font: 400 0.9rem/1.15rem "Source Sans Pro", sans-serif;
 
   /* Experience Section */
   --job-title-font: 600 1rem "Source Sans Pro", sans-serif;
-  --job-company-font: 300 1rem "Source Sans Pro", sans-serif;
-	--job-date-font: 600 0.8rem "Source Code Pro", monospace;
+  --job-company-font: 600 1rem "Source Sans Pro", sans-serif;
+	--job-date-font: 600 0.8rem "Source Code Pro", sans-serif;
 	
 	/* Project Section */
-	--project-link-font: 300 0.7rem "Source Code Pro", sans-serif;
+	--project-link-font: 400 0.8rem "Source Code Sans", sans-serif;
 }
 
 body {
@@ -53,6 +53,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a {
+  cursor: pointer;
   font: var(--p-font);
   color: var(--blue);
   text-decoration: underline;
@@ -90,7 +91,8 @@ p {
     padding: 3rem 1rem;
     grid-template-rows: repeat(3, auto);
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-areas: 	"header header header contact"
+    grid-template-areas: 	"header header header header"
+                          "contact contact contact contact"
                           "experience experience experience sidebar"
                           "education education education education"
   }
@@ -119,7 +121,7 @@ p {
 
 /* Headings */
 section h1 {
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   color: var(--blue);
   font: var(--section-heading-font);
   margin: 2rem 0 1.25rem;
@@ -144,12 +146,13 @@ section h1 {
 
 /* Contact Section */
 .contact {
-	grid-area: contact;
+  grid-area: contact;
 }
 
-.contact a {
-  line-height: 1.25rem;
+.contact ul li {
+  display: inline;
 }
+
 
 /* Experience Section */
 .experience {
@@ -173,7 +176,7 @@ section h1 {
 
 .job-company {
   font: var(--job-company-font);
-  font-style: italic;
+  /* font-style: italic; */
 }
 
 .job-date {
@@ -212,7 +215,7 @@ section h1 {
 
 .project-link {
 	display: block;
-	font: var(--project-link-font);
+	/* font: var(--project-link-font); */
 	margin: 0.25rem 0 0.75rem;
 }
 
@@ -232,7 +235,7 @@ section h1 {
 
 .education-college {
 	font: var(--job-company-font);
-	font-style: italic;
+	/* font-style: italic; */
 }
 
 .education-degree {

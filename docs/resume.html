@@ -129,16 +129,16 @@ section, summary, time, mark, audio, video {
   /* Type */
   --page-title-font: 900 46px "Source Sans Pro", sans-serif;
   --jobtitle-font: 1.25rem "Source Code Pro", monospace;
-  --section-heading-font: 600 0.857rem/1.5rem "Souce Sans Pro", sans-serif;
+  --section-heading-font: 600 1.2rem/1.5 "Souce Sans Pro", sans-serif;
   --p-font: 400 0.9rem/1.15rem "Source Sans Pro", sans-serif;
 
   /* Experience Section */
   --job-title-font: 600 1rem "Source Sans Pro", sans-serif;
-  --job-company-font: 300 1rem "Source Sans Pro", sans-serif;
-	--job-date-font: 600 0.8rem "Source Code Pro", monospace;
+  --job-company-font: 600 1rem "Source Sans Pro", sans-serif;
+	--job-date-font: 600 0.8rem "Source Code Pro", sans-serif;
 	
 	/* Project Section */
-	--project-link-font: 300 0.7rem "Source Code Pro", sans-serif;
+	--project-link-font: 400 0.8rem "Source Code Sans", sans-serif;
 }
 
 body {
@@ -157,6 +157,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a {
+  cursor: pointer;
   font: 400 0.9rem/1.15rem "Source Sans Pro", sans-serif;
   font: var(--p-font);
   color: #2079c7;
@@ -201,7 +202,8 @@ p {
     padding: 3rem 1rem;
     grid-template-rows: repeat(3, auto);
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-areas: 	"header header header contact"
+    grid-template-areas: 	"header header header header"
+                          "contact contact contact contact"
                           "experience experience experience sidebar"
                           "education education education education"
   }
@@ -230,10 +232,10 @@ p {
 
 /* Headings */
 section h1 {
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   color: #2079c7;
   color: var(--blue);
-  font: 600 0.857rem/1.5rem "Souce Sans Pro", sans-serif;
+  font: 600 1.2rem/1.5 "Souce Sans Pro", sans-serif;
   font: var(--section-heading-font);
   margin: 2rem 0 1.25rem;
 }
@@ -260,12 +262,13 @@ section h1 {
 
 /* Contact Section */
 .contact {
-	grid-area: contact;
+  grid-area: contact;
 }
 
-.contact a {
-  line-height: 1.25rem;
+.contact ul li {
+  display: inline;
 }
+
 
 /* Experience Section */
 .experience {
@@ -289,14 +292,14 @@ section h1 {
 }
 
 .job-company {
-  font: 300 1rem "Source Sans Pro", sans-serif;
+  font: 600 1rem "Source Sans Pro", sans-serif;
   font: var(--job-company-font);
-  font-style: italic;
+  /* font-style: italic; */
 }
 
 .job-date {
   text-transform: uppercase;
-  font: 600 0.8rem "Source Code Pro", monospace;
+  font: 600 0.8rem "Source Code Pro", sans-serif;
   font: var(--job-date-font);
   color: #666;
   color: var(--grey);
@@ -336,8 +339,7 @@ section h1 {
 
 .project-link {
 	display: block;
-	font: 300 0.7rem "Source Code Pro", sans-serif;
-	font: var(--project-link-font);
+	/* font: var(--project-link-font); */
 	margin: 0.25rem 0 0.75rem;
 }
 
@@ -347,7 +349,7 @@ section h1 {
 }
 
 .education-date {
-	font: 600 0.8rem "Source Code Pro", monospace;
+	font: 600 0.8rem "Source Code Pro", sans-serif;
 	font: var(--job-date-font);
 	text-transform: uppercase;
 }
@@ -358,9 +360,9 @@ section h1 {
 }
 
 .education-college {
-	font: 300 1rem "Source Sans Pro", sans-serif;
+	font: 600 1rem "Source Sans Pro", sans-serif;
 	font: var(--job-company-font);
-	font-style: italic;
+	/* font-style: italic; */
 }
 
 .education-degree {
@@ -374,4 +376,4 @@ section h1 {
 /* Interests Section */
 .interests {
 }
-</style></head><body><div class="container"><header class="header"><h1>Daniel Hartman</h1><p class="jobtitle">Software Engineer</p></header><section class="contact"><ul><li><a href="mailto:djhrtmn@icloud.com">djhrtmn@icloud.com</a></li><li><a href="https://www.djhartman.com/">djhartman.com</a></li><li><a href="https://www.github.com/dj">github.com/dj</a></li></ul></section><section class="experience"><h1>Experience</h1><ul class="jobs"><li class="job"><p class="job-title-and-company"><span class="job-title">Senior Front End Engineer</span> — <span class="job-company">TandemSeven</span></p><p class="job-date">January 2017 - present</p><ul class="job-description"><li class="job-description-item"><p>Working on a distributed team building a SPA for a national brand with ecommerce functionality and video streaming capabilities</p></li><li class="job-description-item"><p>Built a reusable component library documented with React Styleguidist</p></li><li class="job-description-item"><p>Mentoring junior developers in web development</p></li></ul></li><li class="job"><p class="job-title-and-company"><span class="job-title">Software Engineer</span> — <span class="job-company">MIT Technology Review</span></p><p class="job-date">June 2015 — Sept 2017</p><ul class="job-description"><li class="job-description-item"><p>Shipped a redesigned <a href="https://www.technologyreview.com">MIT Technology Review’s website</a>, migrating from a legacy drupal site to a headless CMS with node.js ”front end.”</p></li><li class="job-description-item"><p>Wrote cross-browser integration tests running by Browserstack with Sellenium.</p></li><li class="job-description-item"><p>Sped up page loads, improved ad unit performance with lazy-loading ad units.</p></li></ul></li><li class="job"><p class="job-title-and-company"><span class="job-title">Software Engineer Co-op</span> — <span class="job-company">EverTrue</span></p><p class="job-date">January 2014 – July 2014</p><ul class="job-description"><li class="job-description-item"><p>Developed Ruby on Rails app to serve white-labeled landing pages for EverTrue’s white-label mobile apps.</p></li><li class="job-description-item"><p>Developed and maintained a Backbone.js and React SPA administrative portal for EverTrue mobile application.</p></li></ul></li><li class="job"><p class="job-title-and-company"><span class="job-title">Software</span> — <span class="job-company">PayPal</span></p><p class="job-date">January 2013 – August 2013</p><ul class="job-description"><li class="job-description-item"><p>Developed and maintained a Ruby on Rails app used to traffic millions of dollars in advertisments as part of a small scrum team.</p></li></ul></li></ul></section><section class="education"><h1>Education</h1><p class="job-title-and-description"><span class="education-university">Northeastern University</span> — <span class="education-college">CCIS</span></p><p class="education-date">May 2015</p><p class="education-degree">B.Sc in Computer Science and Interactive Media</p></section><div class="sidebar"><section class="projects"><h1>Projects</h1><ul class="projects"><li class="project"><p class="project-title">Census Data Map</p><a class="project-link" href="http://dj.github.io/boston/">dj.github.io/boston/</a><p class="project-description">Census tract-level data visualization. Made with D3 and Leaflet.js</p></li><li class="project"><p class="project-title">Point Poker</p><a class="project-link" href="TODO">pointpoker.com</a><p class="project-description">Online multiplayer scrum poker game. Node.js server with Firebase API and React.js client.</p></li></ul></section><section class="skills"><h1>Skills</h1><p>JavaScript, HTML &amp; CSS, Ruby, Python, Lua, Java, Go</p></section><section class="interests"><h1>Interests</h1><p>Live music, cycling, podcasts, cooking, video games</p></section></div></div></body></html>
+</style></head><body><div class="container"><header class="header"><h1>Daniel Hartman</h1><p class="jobtitle">Software Engineer</p></header><section class="contact"><ul><li><a href="mailto:djhrtmn@icloud.com">djhrtmn@icloud.com</a></li> <li><a href="https://www.djhartman.com/">djhartman.com</a></li> <li><a href="https://www.github.com/dj">github.com/dj</a></li></ul></section><section class="experience"><h1>Experience</h1><ul class="jobs"><li class="job"><p class="job-title-and-company"><span class="job-title">Senior Front End Engineer</span> — <span class="job-company">TandemSeven</span></p><p class="job-date">January 2017 - present</p><ul class="job-description"><li class="job-description-item"><p>Working on a distributed team building a SPA for a national brand with ecommerce functionality and video streaming capabilities</p></li><li class="job-description-item"><p>Built a reusable component library documented with React Styleguidist</p></li><li class="job-description-item"><p>Mentoring junior developers in web development</p></li></ul></li><li class="job"><p class="job-title-and-company"><span class="job-title">Software Engineer</span> — <span class="job-company">MIT Technology Review</span></p><p class="job-date">June 2015 — Sept 2017</p><ul class="job-description"><li class="job-description-item"><p>Shipped a redesigned <a href="https://www.technologyreview.com">MIT Technology Review’s website</a>, migrating from a legacy drupal site to a headless CMS with node.js ”front end.”</p></li><li class="job-description-item"><p>Wrote cross-browser integration tests running by Browserstack with Sellenium.</p></li><li class="job-description-item"><p>Sped up page loads, improved ad unit performance with lazy-loading ad units.</p></li></ul></li><li class="job"><p class="job-title-and-company"><span class="job-title">Software Engineer Co-op</span> — <span class="job-company">EverTrue</span></p><p class="job-date">January 2014 – July 2014</p><ul class="job-description"><li class="job-description-item"><p>Developed Ruby on Rails app to serve white-labeled landing pages for EverTrue’s white-label mobile apps.</p></li><li class="job-description-item"><p>Developed and maintained a Backbone.js and React SPA administrative portal for EverTrue mobile application.</p></li></ul></li><li class="job"><p class="job-title-and-company"><span class="job-title">Software</span> — <span class="job-company">PayPal</span></p><p class="job-date">January 2013 – August 2013</p><ul class="job-description"><li class="job-description-item"><p>Developed and maintained a Ruby on Rails app used to traffic millions of dollars in advertisments as part of a small scrum team.</p></li></ul></li></ul></section><section class="education"><h1>Education</h1><p class="job-title-and-description"><span class="education-university">Northeastern University</span> — <span class="education-college">CCIS</span></p><p class="education-date">May 2015</p><p class="education-degree">B.Sc in Computer Science and Interactive Media</p></section><div class="sidebar"><section class="projects"><h1>Projects</h1><ul class="projects"><li class="project"><p class="project-title">Census Data Map</p><a class="project-link" href="http://dj.github.io/boston/">dj.github.io/boston</a><p class="project-description">Census tract-level data visualization. Made with D3 and Leaflet.js</p></li><li class="project"><p class="project-title">Point Poker</p><a class="project-link" href="TODO">pointpoker.com</a><p class="project-description">Online multiplayer scrum poker game. Node.js server with Firebase API and React.js client.</p></li></ul></section><section class="skills"><h1>Skills</h1><p>JavaScript, HTML &amp; CSS, Ruby, Python, Lua, Java, Go</p></section><section class="interests"><h1>Interests</h1><p>Live music, cycling, podcasts, cooking, video games</p></section></div></div></body></html>

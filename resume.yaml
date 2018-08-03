@@ -50,7 +50,7 @@ jobs:
 projects:
   - title: Census Data Map
     href: 'http://dj.github.io/boston/'
-    a: 'dj.github.io/boston/'
+    a: 'dj.github.io/boston'
     description: 'Census tract-level data visualization. Made with D3 and Leaflet.js'
   - title: Point Poker
     href: 'TODO'
