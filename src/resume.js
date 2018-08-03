@@ -44,10 +44,10 @@ const resume = css => (
           <ul>
             <li>
               <a href={`mailto:${email}`}>{email}</a>
-            </li>{' '}
+            </li>
             <li>
               <a href={website.href}>{website.a}</a>
-            </li>{' '}
+            </li>
             <li>
               <a href={github.href}>{github.a}</a>
             </li>

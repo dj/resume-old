@@ -25,7 +25,7 @@ section, summary, time, mark, audio, video {
   --dark-grey: #222;
 
   /* Type */
-  --page-title-font: 900 46px "Source Sans Pro", sans-serif;
+  --page-title-font: 900 2.875rem/1 "Source Sans Pro", sans-serif;
   --jobtitle-font: 600 1.2rem/1.5 "Source Code Pro", sans-serif;
   --section-heading-font: 600 1.2rem/1.5 "Source Code Pro", sans-serif;
   --p-font: 400 0.9rem/1.15rem "Source Sans Pro", sans-serif;
@@ -69,7 +69,7 @@ p {
   background-color: #fff;
   font-family: system-ui;
   background-color: var(--resume-background);
-  padding: 2rem 1rem;
+  padding: 3rem 1.5rem;
   margin: 0;
   max-width: var(--container-width);
 
@@ -86,19 +86,18 @@ p {
                         "sidebar";
 }
 
-@media only screen and (min-width: 650px) {
+@media print, screen and (min-width: 650px) {
   .container {
     padding: 3rem 1rem;
     grid-template-rows: repeat(3, auto);
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-areas: 	"header header header header"
-                          "contact contact contact contact"
+    grid-template-areas: 	"header header header contact"
                           "experience experience experience sidebar"
                           "education education education education"
   }
 }
 
-@media only screen and (min-width: 800px) {
+@media (min-width: 800px) {
   .container {
     padding: 5rem 3rem;
     margin: 3rem auto 3rem;
@@ -107,11 +106,13 @@ p {
 
 /* Print */
 @media only print {
+  body {
+    background-color: var(--resume-background);
+  }
+
 	.container {
 		margin: 0;
 		padding: 0;
-		max-width: 100%;
-		box-shadow: none;
 	}
 }
 
@@ -147,13 +148,12 @@ section h1 {
 /* Contact Section */
 .contact {
   grid-area: contact;
-  margin-bottom: 1.5rem;
+  margin: auto auto auto 0;
 }
 
-.contact ul li {
-  display: inline;
+.contact li a {
+  line-height: 1.4;
 }
-
 
 /* Experience Section */
 .experience {
@@ -161,7 +161,7 @@ section h1 {
   padding-right: 1rem;
 }
 
-@media only screen and (min-width: 600px) {
+@media (min-width: 600px) {
   .experience {
     padding-right: 5rem;
   }
