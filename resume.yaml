@@ -25,13 +25,13 @@ jobs:
     title: Senior Front End Engineer
     date: January 2018 - present
     description:
-      - Devloped a React SPA with a distributed team building for a national brand with a complex checkout process, video streaming capabilities, user management, complex search & filtering.
+      - Developed a React SPA with a distributed team building for a national brand with a complex checkout process, video streaming capabilities, user management, complex search & filtering.
       - Mentored junior developers in web development.
   - company: MIT Technology Review
     title: Software Engineer
     date: June 2015 — Sept 2017
     description:
-      - Delivered a complete redesign of <a href="https://www.technologyreview.com">MIT Technology Review</a>, migrating from a legacy Drupal site to a headless CMS API with Drupal and Node.js and an responsive, ES6 front end.
+      - Delivered a complete redesign of <a href="https://www.technologyreview.com">MIT Technology Review</a>, migrating from a legacy Drupal site to a headless CMS API with Drupal and Node.js and a responsive, ES6 front end.
       - Implemented responsive image proxy and used HTML picture element to provide the different resolutions and different crops depending on device resolution.
       - Sped up page loads and improved ad unit visiblity by over 30% by implementing lazy-loading ad units.
   - company: EverTrue
