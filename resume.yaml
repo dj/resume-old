@@ -31,8 +31,8 @@ jobs:
     title: Software Engineer
     date: June 2015 — Sept 2017
     description:
-      - Delivered a complete redesign of <a href="https://www.technologyreview.com">MIT Technology Review</a>, migrating from a legacy Drupal site to a headless CMS API with Drupal and Node.js and a responsive, ES6 front end.
-      - Implemented responsive image proxy and used HTML picture element to provide the different resolutions and different crops depending on device resolution.
+      - Delivered a complete redesign of <a href="https://www.technologyreview.com">MIT Technology Review</a>, migrating from a legacy Drupal site to a headless CMS API with Node.js and a responsive, ES6 front end.
+      - Implemented responsive image proxy and to provide the multiple resolutions and art direction based on device resolution.
       - Sped up page loads and improved ad unit visiblity by over 30% by implementing lazy-loading ad units.
   - company: EverTrue
     title: Software Engineer Co-op
