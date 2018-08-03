@@ -2,12 +2,13 @@ const { resolve } = require("path");
 const { execSync } = require("child_process");
 const BUILD_DIR = resolve(__dirname, "build");
 const RESUME_GENERATOR_SCRIPT = resolve(__dirname, "build", "resume");
+const RESUME_YAML = resolve(__dirname, "resume.yaml")
 const RESUME_SRC = resolve(__dirname, "src", "resume");
 const RESUME_OUT = resolve(__dirname, "docs", "resume.html");
 const CSS_SRC = resolve(__dirname, "src", "styles.css")
 
 module.exports = {
-    mode: "development",
+    mode: "production",
     target: "node",
     entry: {
         resume: RESUME_SRC
@@ -20,15 +21,19 @@ module.exports = {
     plugins: [
         // Watch files not compiled by webpack
         {
-
             apply: compiler => {
+                const externalDependencies = [CSS_SRC, RESUME_YAML]
                 compiler.hooks.afterCompile.tap("AfterCompilePlugin", compilation => {
                     if (Array.isArray(compilation.fileDependencies)) {
-                        if (!compilation.fileDependencies(CSS_SRC)) {
-                            compilation.fileDependencies.push(CSS_SRC)
-                        }
+                        externalDependencies.forEach(file => {
+                            if (!compilation.fileDependencies(file)) {
+                                compilation.fileDependencies.push(file)
+                            }
+                        })
                     } else {
-                        compilation.fileDependencies.add(CSS_SRC)
+                        externalDependencies.forEach(file => {
+                            compilation.fileDependencies.add(file)
+                        })
                     }
                 })
             }

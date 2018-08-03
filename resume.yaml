@@ -23,29 +23,28 @@ github:
 jobs:
   - company: TandemSeven
     title: Senior Front End Engineer
-    date: January 2017 - present
+    date: January 2018 - present
     description:
-      - Working on a distributed team building a SPA for a national brand with ecommerce functionality and video streaming capabilities
-      - Built a reusable component library documented with React Styleguidist
-      - Mentoring junior developers in web development
+      - Devloped a React SPA with a distributed team building a SPA for a national brand with a complex checkout process, video streaming capabilities, user management, complex search & filtering.
+      - Mentoring junior developers in web development.
   - company: MIT Technology Review
     title: Software Engineer
     date: June 2015 — Sept 2017
     description:
-      - Shipped a redesigned <a href="https://www.technologyreview.com">MIT Technology Review’s website</a>, migrating from a legacy drupal site to a headless CMS with node.js ”front end.”
-      - Wrote cross-browser integration tests running by Browserstack with Sellenium.
-      - Sped up page loads, improved ad unit performance with lazy-loading ad units.
+      - Delivered a complete redesign of <a href="https://www.technologyreview.com">MIT Technology Review</a>, migrating from a legacy Drupal site to a headless CMS API with Drupal and Node.js and an responsive, ES6 front end.
+      - Implemented responsive image proxy and used HTML picture element to provide the different resolutions and different crops depending on device resolution.
+      - Sped up page loads and improved ad unit visiblity by over 30% by implementing lazy-loading ad units.
   - company: EverTrue
     title: Software Engineer Co-op
     date: January 2014 – July 2014
     description:
-      - Developed Ruby on Rails app to serve white-labeled landing pages for EverTrue’s white-label mobile apps.
+      - Developed Ruby on Rails app to serve white-labeled landing pages for <a href="https://www.evertrue.com/products/alumni-community/">EverTrue’s mobile apps</a>.
       - Developed and maintained a Backbone.js and React SPA administrative portal for EverTrue mobile application.
   - company: PayPal
-    title: Software
+    title: Software Engineer Co-op
     date: January 2013 – August 2013
     description:
-      - Developed and maintained a Ruby on Rails app used to traffic millions of dollars in advertisments as part of a small scrum team.
+      - Developed and maintained a Ruby on Rails app used to traffic millions of dollars in advertisments as part of a 6-person scrum team.
 
 projects:
   - title: Census Data Map
@@ -68,7 +67,8 @@ skills:
 
 interests:
   - Live music
-  - cycling
   - podcasts
+  - cycling
   - cooking
+  - guitar
   - video games
