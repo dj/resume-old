@@ -51,10 +51,6 @@ projects:
     href: 'http://dj.github.io/boston/'
     a: 'dj.github.io/boston'
     description: 'Census tract-level data visualization. Made with D3 and Leaflet.js'
-  - title: Point Poker
-    href: 'TODO'
-    a: 'pointpoker.com'
-    description: 'Online multiplayer scrum poker game. Node.js server with Firebase API and React.js client.'
 
 skills:
   - JavaScript
