@@ -21,9 +21,14 @@ github:
   href: https://www.github.com/dj
 
 jobs:
+  - company: Wayfair
+    title: Engineer
+    date: December 2018 - Present
+    description:
+      - "Software engineer on the home services team"
   - company: TandemSeven
     title: Senior Front End Engineer
-    date: January 2018 - present
+    date: January 2018 - November 2018
     description:
       - Developed a React SPA with a distributed team for a national brand with a complex checkout process, video streaming capabilities, user management, complex search & filtering.
       - Mentored junior developers in web development.
@@ -32,7 +37,7 @@ jobs:
     date: June 2015 — Sept 2017
     description:
       - Delivered a complete redesign of <a href="https://www.technologyreview.com">MIT Technology Review</a>, migrating from a legacy Drupal site to a headless CMS API with Node.js and a responsive, ES6 front end.
-      - Implemented responsive image proxy and to provide the multiple resolutions and art direction based on device resolution.
+      - Implemented responsive images system to provide the multiple resolutions and art direction based on device resolution.
       - Sped up page loads and improved ad unit visiblity by over 30% by implementing lazy-loading ad units.
   - company: EverTrue
     title: Software Engineer Co-op
