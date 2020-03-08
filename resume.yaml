@@ -7,14 +7,9 @@ jobtitle: Software Engineer
 education:
   date: May 2015
   university: Northeastern University
-  college: CCIS
   degree: B.Sc in Computer Science and Interactive Media
 
 email: djhrtmn@icloud.com
-
-website:
-  a: djhartman.com
-  href: https://www.djhartman.com/
 
 github:
   a: github.com/dj
@@ -22,16 +17,18 @@ github:
 
 jobs:
   - company: Wayfair
-    title: Engineer
+    title: Software Engineer 2
     date: December 2018 - Present
     description:
-      - "Software engineer on the home services team"
+      - "Built a responsive React app to allow contractors to apply to work for Wayfair doing assembly & installation. This replaced a more laborious phone interview process and allowed Wayfair Home Services to scale their contractor hiring."
+      - "Worked on integrating a new warranty parter, SquareTrade, by implementing a Python/Flask service, increasing the number of products with warranty offerings."
+      - "Implemented a C# .NET service to determine the best product given a variety of product identifiers using business rules. By using a chain of responsibility pattern we were able to allow stakeholders to reprioritize the rules in the future."
+      - "Mentored junior developers in the Wayfair Labs program."
   - company: TandemSeven
     title: Senior Front End Engineer
     date: January 2018 - November 2018
     description:
-      - Developed a React SPA with a distributed team for a national brand with a complex checkout process, video streaming capabilities, user management, complex search & filtering.
-      - Mentored junior developers in web development.
+      - Developed a React SPA with a distributed team for Redbox including a complex checkout process, video streaming capabilities, user management, complex search & filtering.
   - company: MIT Technology Review
     title: Software Engineer
     date: June 2015 — Sept 2017
@@ -51,25 +48,19 @@ jobs:
     description:
       - Developed and maintained a Ruby on Rails app used to traffic millions of dollars in advertisments as part of a 6-person scrum team.
 
-projects:
-  - title: Census Data Map
-    href: 'http://dj.github.io/boston/'
-    a: 'dj.github.io/boston'
-    description: 'Census tract-level data visualization. Made with D3 and Leaflet.js'
-
 skills:
-  - JavaScript
-  - HTML & CSS
-  - Ruby
+  - SQL
+  - Docker
+  - C#
+  - .NET
   - Python
-  - Lua
+  - Flask
+  - Ruby
+  - Ruby on Rails
+  - PHP
   - Java
-  - Go
-
-interests:
-  - Live music
-  - podcasts
-  - cycling
-  - cooking
-  - guitar
-  - video games
+  - GraphQL
+  - JavaScript
+  - React
+  - Redux
+  - HTML & CSS

@@ -82,7 +82,6 @@ p {
   grid-template-areas: "header"
                         "contact"
                         "experience"
-                        "education"
                         "sidebar";
 }
 
@@ -93,7 +92,7 @@ p {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-areas: 	"header header header contact"
                           "experience experience experience sidebar"
-                          "education education education education"
+                          "experience experience experience sidebar"
   }
 }
 
@@ -223,7 +222,6 @@ section h1 {
 
 /* Education Section */
 .education {
-	grid-area: education;
 }
 
 .education-date {

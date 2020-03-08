@@ -11,7 +11,6 @@ const {
   title,
   jobtitle,
   email,
-  website,
   github,
   skills,
   jobs,
@@ -46,9 +45,6 @@ const resume = css => (
               <a href={`mailto:${email}`}>{email}</a>
             </li>
             <li>
-              <a href={website.href}>{website.a}</a>
-            </li>
-            <li>
               <a href={github.href}>{github.a}</a>
             </li>
           </ul>
@@ -76,40 +72,19 @@ const resume = css => (
           </ul>
         </section>
 
-        <section className="education">
-          <h1>Education</h1>
-          <p className="job-title-and-description">
-            <span className="education-university">{education.university}</span>{" "}
-            — <span className="education-college">{education.college}</span>
-          </p>
-          <p className="education-date">{education.date}</p>
-          <p className="education-degree">{education.degree}</p>
-        </section>
-
         <div className="sidebar">
-          <section className="projects">
-            <h1>Projects</h1>
-            <ul className="projects">
-              {projects.map((project, i) => (
-                <li className="project" key={i}>
-                  <p className="project-title">{project.title}</p>
-                  <a className="project-link" href={project.href}>
-                    {project.a}
-                  </a>
-                  <p className="project-description">{project.description}</p>
-                </li>
-              ))}
-            </ul>
+          <section className="education">
+            <h1>Education</h1>
+            <p className="job-title-and-description">
+              <span className="education-university">{education.university}</span>{" "}
+            </p>
+            <p className="education-date">{education.date}</p>
+            <p className="education-degree">{education.degree}</p>
           </section>
 
           <section className="skills">
             <h1>Skills</h1>
             <p>{skills.join(", ")}</p>
-          </section>
-
-          <section className="interests">
-            <h1>Interests</h1>
-            <p>{interests.join(", ")}</p>
           </section>
         </div>
       </div>
