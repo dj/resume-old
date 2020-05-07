@@ -77,7 +77,7 @@ p {
   display: block;
   display: grid;
   gap: 0;
-  grid-template-rows: repeat(5, auto);
+  grid-template-rows: repeat(3, auto);
   grid-template-columns: 1fr;
   grid-template-areas: "header"
                         "contact"

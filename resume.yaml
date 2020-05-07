@@ -21,8 +21,8 @@ jobs:
     date: December 2018 - Present
     description:
       - "Built a responsive React app to allow contractors to apply to work for Wayfair doing assembly & installation. This replaced a more laborious phone interview process and allowed Wayfair Home Services to scale their contractor hiring."
-      - "Worked on integrating a new warranty parter, SquareTrade, by implementing a Python/Flask service, increasing the number of products with warranty offerings."
-      - "Implemented a C# .NET service to determine the best product given a variety of product identifiers using business rules. By using a chain of responsibility pattern we were able to allow stakeholders to reprioritize the rules in the future."
+      - "Worked on integrating a new warranty parter, SquareTrade, by implementing a Python/Flask service, increasing the number of products with warranty&nbsp;offerings."
+      - "Implemented a C# .NET service to determine the best product given a variety of product identifiers using business rules. By using a chain of responsibility pattern we were able to allow stakeholders to reprioritize the rules in the&nbsp;future."
       - "Mentored junior developers in the Wayfair Labs program."
   - company: TandemSeven
     title: Senior Front End Engineer
