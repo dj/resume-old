@@ -18,49 +18,40 @@ github:
 jobs:
   - company: Wayfair
     title: Software Engineer 2
-    date: December 2018 - Present
+    date: December 2018 - May 2020
     description:
-      - "Built a responsive React app to allow contractors to apply to work for Wayfair doing assembly & installation. This replaced a more laborious phone interview process and allowed Wayfair Home Services to scale their contractor hiring."
-      - "Worked on integrating a new warranty parter, SquareTrade, by implementing a Python/Flask service, increasing the number of products with warranty&nbsp;offerings."
-      - "Implemented a C# .NET service to determine the best product given a variety of product identifiers using business rules. By using a chain of responsibility pattern we were able to allow stakeholders to reprioritize the rules in the&nbsp;future."
-      - "Mentored junior developers in the Wayfair Labs program."
+      - "Developed a mobile-friendly React SPA, allowing contractors to apply to work for Wayfair Home Services."
+      - "Worked on a Python/Flask service to integrate a new 3rd party service provider."
+      - "Implemented a C# .NET API for determining the best SKU for a given product, allowing us to deprecate a legacy stored procedure."
+      - "Mentored junior developers in the Wayfair Labs program in full-stack development, leading them in exercises covering MVC patterns, React and version control with git."
   - company: TandemSeven
     title: Senior Front End Engineer
     date: January 2018 - November 2018
     description:
-      - Developed a React SPA with a distributed team for Redbox including a complex checkout process, video streaming capabilities, user management, complex search & filtering.
+      - Developed a React SPA for a TV & Movie streaming service.
   - company: MIT Technology Review
     title: Software Engineer
     date: June 2015 — Sept 2017
     description:
-      - Delivered a complete redesign of <a href="https://www.technologyreview.com">MIT Technology Review</a>, migrating from a legacy Drupal site to a headless CMS API with Node.js and a responsive, ES6 front end.
-      - Implemented responsive images system to provide the multiple resolutions and art direction based on device resolution.
-      - Sped up page loads and improved ad unit visiblity by over 30% by implementing lazy-loading ad units.
+      - Worked with outside design firm to implement a redesign of <a href="https://www.technologyreview.com">MIT Technology Review</a> using Node.js and ES6.
+      - Designed responsive images API to provide multiple resolutions and crops of photographic imagery.
   - company: EverTrue
     title: Software Engineer Co-op
     date: January 2014 – July 2014
     description:
-      - Developed Ruby on Rails app to serve white-labeled landing pages for <a href="https://www.evertrue.com/products/alumni-community/">EverTrue’s mobile apps</a>.
-      - Developed and maintained a Backbone.js and React SPA administrative portal for EverTrue mobile application.
-  - company: PayPal
-    title: Software Engineer Co-op
-    date: January 2013 – August 2013
-    description:
-      - Developed and maintained a Ruby on Rails app used to traffic millions of dollars in advertisments as part of a 6-person scrum team.
+      - Developed Ruby on Rails app for displaying landing pages for EverTrue's mobile applications.
+      - Worked on a React SPA admin interface for EverTrue mobile applications.
 
 skills:
   - SQL
   - Docker
   - C#
+  - JavaScript
+  - React
+  - HTML & CSS
   - .NET
   - Python
-  - Flask
-  - Ruby
   - Ruby on Rails
   - PHP
   - Java
-  - GraphQL
-  - JavaScript
-  - React
-  - Redux
-  - HTML & CSS
+
