@@ -31,7 +31,7 @@ jobs:
       - Developed a React SPA for a TV & Movie streaming service.
   - company: MIT Technology Review
     title: Software Engineer
-    date: June 2015 — Sept 2017
+    date: June 2015 — September 2017
     description:
       - Worked with outside design firm to implement a redesign of <a href="https://www.technologyreview.com">MIT Technology Review</a> using Node.js and ES6.
       - Designed responsive images API to provide multiple resolutions and crops of photographic imagery.
